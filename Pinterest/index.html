@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Style Grid with Boards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <label for="hashtag-filter">Filter by hashtag:</label>
+        <select id="hashtag-filter">
+            <option value="">All</option>
+        </select>
+    </div>
+    <div>
+        <label for="view-select">View:</label>
+        <select id="view-select">
+            <option value="my-feed">My Feed</option>
+            <option value="board1">Доска 1</option>
+            <option value="board2">Доска 2</option>
+            <option value="board3">Доска 3</option>
+        </select>
+    </div>
+    <div id="pinterest-grid"></div>
+
+    <!-- Board Modal -->
+    <div class="modal-overlay" id="board-modal-overlay"></div>
+    <div class="modal" id="board-modal">
+        <h3>Выберите доску:</h3>
+        <select id="modal-board-select">
+            <option value="board1">Доска 1</option>
+            <option value="board2">Доска 2</option>
+            <option value="board3">Доска 3</option>
+        </select>
+        <button id="save-board-btn">Сохранить</button>
+        <button id="close-board-modal">Закрыть</button>
+    </div>
+
+    <!-- Report Modal -->
+    <div class="modal-overlay" id="report-modal-overlay"></div>
+    <div class="modal" id="report-modal">
+        <h3>Почему вы хотите скрыть этот пин?</h3>
+        <select id="report-reason">
+            <option value="not-interested">Неинтересно</option>
+            <option value="offensive">Оскорбительно</option>
+            <option value="spam">Спам</option>
+        </select>
+        <button id="submit-report-btn">Отправить</button>
+        <button id="close-report-modal">Закрыть</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
