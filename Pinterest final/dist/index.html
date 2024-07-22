@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest</title>
+  <link rel="icon" href="https://i.pinimg.com/564x/f9/5b/91/f95b9179f1e86fc997b589d5b489033b.jpg" type="fab fa-pinterest">
+  <link rel="stylesheet" href="/styles.8986bff4.css">
+<script src="/styles.8986bff4.js"></script></head>
+
+<body>   
+  <div class="header">
+    <a class="logo" href=""><img class="logo" src="https://i.pinimg.com/564x/f9/5b/91/f95b9179f1e86fc997b589d5b489033b.jpg" alt=""></a>
+    <select id="hashtag-filter">
+      <option value="">Все</option>
+    </select>
+    <select id="view-select">
+      <option value="my-feed">Моя лента</option>
+      <option value="board1">Доска 1</option>
+      <option value="board2">Доска 2</option>
+      <option value="board3">Доска 3</option>
+    </select>
+  </div>
+  <div id="pinterest-grid"></div>
+
+  <div id="board-modal" class="modal">
+    <div class="modal-content">
+      
+      <h2>Сохранить на ...</h2>
+      <label><input type="radio" name="board-select" value="board1"> Доска 1</label><br>
+      <label><input type="radio" name="board-select" value="board2"> Доска 2</label><br>
+      <label><input type="radio" name="board-select" value="board3"> Доска 3</label><br>
+      <div class="menu-btn"><button id="save-board-btn">Да</button><span id="close-board-modal" class="close">Нет</span></div>
+      
+    </div>
+  </div>
+
+  <div id="report-modal" class="modal">
+    <div class="modal-content">
+      
+      <h2>Скрыть Пин</h2>
+      <label><input type="radio" name="report-reason" value="spam"> Спам</label><br>
+      <label><input type="radio" name="report-reason" value="inappropriate"> Просмотренно</label><br>
+      <label><input type="radio" name="report-reason" value="other"> Другое</label><br>
+      <div class="menu-btn"><button id="submit-report-btn">Скрыть</button><span id="close-report-modal" class="close">Отмена</span></div>
+    </div>
+  </div>
+
+  <div id="report-modal-overlay" class="modal-overlay"></div>
+
+  <script type="module" src="/main.1f19ae8e.js"></script>
+</body>
+</html>
